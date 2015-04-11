@@ -21,7 +21,8 @@ namespace HighchartsSettings
             public String text;
         }
 
-        public string max;
+        public double? max;
+        public double? min;
         public Title title = new Title();
     }
 
