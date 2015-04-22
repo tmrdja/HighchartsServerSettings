@@ -30,15 +30,15 @@ namespace HighchartsSettings
     {
         public static class Type
         {
-            public static readonly string linear = "linear";
-            public static readonly string logarithmic = "logarithmic";
-            public static readonly string datetime = "datetime";
-            public static readonly string category = "category";
+            public static readonly string LINEAR = "linear";
+            public static readonly string LOGARITHMIC = "logarithmic";
+            public static readonly string DATETIME = "datetime";
+            public static readonly string CATEGORY = "category";
         };
 
         public string min;
         public string max;
-        public String type = Type.linear;
+        public String type = Type.LINEAR;
         public double? tickInterval;
         public double? minTickInterval;
         public struct Title
@@ -65,6 +65,22 @@ namespace HighchartsSettings
         public Int32? lineWidth;
         public Int32? pointWidth;
         public Int32 yAxis = 0;
+
+        public static class Type
+        {
+            public static readonly string LINE = "line";
+            public static readonly string SPLINE = "spline";
+            public static readonly string AREA = "area";
+            public static readonly string AREASPLINE = "areaspline";
+            public static readonly string COLUMN = "column";
+            public static readonly string BAR = "bar";
+            public static readonly string PIE = "pie";
+            public static readonly string SCATTER = "scatter";
+            public static readonly string GAUGE = "gauge";
+            public static readonly string AREARANGE = "arearange";
+            public static readonly string AREASPLINERANGE = "areasplinerange";
+            public static readonly string COLUMNRANGE = "columnrange";
+        };
     }
 
     public struct Marker
@@ -74,10 +90,10 @@ namespace HighchartsSettings
         public String symbol;
     }
 
-    public struct ChartOptions
+    /*public struct ChartOptions
     {
         public String type;
-    }
+    }*/
 
     public class Legend
     {
